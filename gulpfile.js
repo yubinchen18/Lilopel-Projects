@@ -12,5 +12,15 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    //mix.sass('app.scss');
+    
+    mix.styles([
+        'bootstrap-material-design.css',
+        'ripples.css'
+    ]);
+    
+    mix.scripts([
+        'material.js',
+        'ripples.js'
+    ])
 });
